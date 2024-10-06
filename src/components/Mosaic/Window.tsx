@@ -83,7 +83,7 @@ const Window: React.FC<WindowProps> = ({
   };
   const renderToolbar = (count: number) => {
     return (
-      <div className="flex gap-2 p-2 w-full justify-center">
+      <div className="flex gap-2 w-full justify-center">
         <div className="flex-2">{select}</div>
         <div className="flex-1 text-center">{title}</div>
       </div>

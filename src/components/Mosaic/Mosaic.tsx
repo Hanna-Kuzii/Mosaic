@@ -156,7 +156,7 @@ const MosaicComponent: React.FC = () => {
         value={currentNode}
         onChange={onChange}
         onRelease={onRelease}
-        className={THEMES[currentTheme]}
+        className={`${THEMES[currentTheme]} h-95p`}
         blueprintNamespace="bp5"
       />
     </div>

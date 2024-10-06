@@ -12,3 +12,6 @@ div.mosaic-window-toolbar {
   height: auto;
   min-height: 50px;
 }
+.h-95p.mosaic {
+  height: 95%;
+}

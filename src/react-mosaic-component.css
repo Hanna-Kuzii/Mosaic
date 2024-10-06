@@ -1,11 +1,14 @@
 div.mosaic-window-controls {
-    width: 100%;
-  }
-  div.mosaic-window-toolbar {
-    min-height: min-content;
-    padding: 5px;
-  }
-  .mosaic-window  div.mosaic-window-body {
-    overflow: scroll;
-  }
-  
+  width: 100%;
+}
+div.mosaic-window-toolbar {
+  min-height: min-content;
+  padding: 5px;
+}
+.mosaic-window div.mosaic-window-body {
+  overflow: scroll;
+}
+.bp5-navbar {
+  height: auto;
+  min-height: 50px;
+}

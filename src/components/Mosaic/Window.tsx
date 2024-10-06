@@ -72,12 +72,12 @@ const Window: React.FC<WindowProps> = ({
   const renderToolbarControls = ({ count }: { count?: any }) => {
     const toolbarControls = count !== 3 ? getToolbarControls() : [];
     return (
-      <div className="w-full flex justify-between">
-        <div className="flex gap-4 items-center">
+      <div className="w-full flex justify-between items-center flex-wrap">
+        <div className="flex gap-2 items-center flex-wrap">
           {title}
           {select}
         </div>
-        <div className="">{toolbarControls}</div>
+        <div className="flex flex-wrap items-center justify-end w-auto">{toolbarControls}</div>
       </div>
     );
   };

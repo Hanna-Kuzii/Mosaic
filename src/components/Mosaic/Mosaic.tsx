@@ -147,7 +147,7 @@ const MosaicComponent: React.FC = () => {
             path={path}
             data={data}
             generateUniqueId={generateUniqueId}
-            currentTheme={currentTheme} 
+            currentTheme={currentTheme}
           />
         )}
         zeroStateView={
@@ -174,14 +174,14 @@ const renderNavBar = (
       className={`${classNames(
         Classes.NAVBAR,
         Classes.DARK
-      )} flex justify-between items-center`}
+      )} flex justify-between items-center gap-4 sm:h-min h-min`}
     >
       <p className="m-0">
         react mosaic <span className="">v.6.1.0</span>
       </p>
-      <div className={`flex items-center gap-2`}>
+      <div className={`flex items-center sm:gap-4 gap-2 sm:flex-nowrap flex-wrap`}>
         <label>
-          <span className="mr-2">Theme:</span>
+          <span className="mr-2 md:mb-0 mb-2">Theme:</span>
           <HTMLSelect
             value={currentTheme}
             onChange={(e) => setCurrentTheme(e.currentTarget.value as Theme)}
@@ -191,27 +191,28 @@ const renderNavBar = (
             ))}
           </HTMLSelect>
         </label>
-        <div className="navbar-separator" />
-        <span className="actions-label">Example Actions:</span>
-        <div className="flex">
-          <button
-            className={`${classNames(
-              Classes.BUTTON,
-              Classes.iconClass(IconNames.GRID_VIEW)
-            )} shadow-lg shadow-right-none`}
-            onClick={autoArrange}
-          >
-            Auto Arrange
-          </button>
-          <button
-            className={`${classNames(
-              Classes.BUTTON,
-              Classes.iconClass(IconNames.ARROW_TOP_RIGHT)
-            )} shadow-lg shadow-left-none`}
-            onClick={addToTopRight}
-          >
-            Add Window to Top Right
-          </button>
+        <div className="flex gap-2 items-center sm:flex-nowrap flex-wrap">
+          <span className="actions-label">Example Actions:</span>
+          <div className="flex">
+            <button
+              className={`${classNames(
+                Classes.BUTTON,
+                Classes.iconClass(IconNames.GRID_VIEW)
+              )} shadow-lg shadow-right-none`}
+              onClick={autoArrange}
+            >
+              Auto Arrange
+            </button>
+            <button
+              className={`${classNames(
+                Classes.BUTTON,
+                Classes.iconClass(IconNames.ARROW_TOP_RIGHT)
+              )} shadow-lg shadow-left-none`}
+              onClick={addToTopRight}
+            >
+              Add Window to Top Right
+            </button>
+          </div>
         </div>
       </div>
     </div>
